@@ -1,7 +1,7 @@
 package com.technoelevate.challenge;
 
 public class Timeprogram {
-	public static void  getDurationString(int min,int sec)
+	public static String getDurationString(int min,int sec)
 	{ 
 		int hour=0;
 		int min1=0;
@@ -16,9 +16,9 @@ public class Timeprogram {
 		}
 		else
 		{
-			System.out.println("invalid value");
+			return "invalid value";
 		}
-		System.out.println("0"+hour+"h"+" "+"0"+min1+"m"+" "+"0"+sec2+"s");
+		return "0"+hour+"h"+" "+"0"+min1+"m"+" "+"0"+sec2+"s";
 	}
 	
 	public static void  getDurationString(int sec)
